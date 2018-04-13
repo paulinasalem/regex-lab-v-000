@@ -24,7 +24,7 @@ end
 end
 
 def valid_phone_number?(phone)
-if  !!phone.scan(/\b[1-9]{10}\b/)
+if  !!phone.match(/\b[1-9]{10}\b/)
     true
   else
     false
