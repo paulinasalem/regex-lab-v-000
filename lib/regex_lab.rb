@@ -24,7 +24,6 @@ end
 end
 
 def valid_phone_number?(phone)
-  phone.split
   phone.all do |number|
     number = [0-9]
 end
