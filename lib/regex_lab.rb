@@ -24,8 +24,7 @@ end
 end
 
 def valid_phone_number?(phone)
-  phone.all do |number|
-    number = [0-9]
+  phone.match(/\b[1-9]{10}\b/)
 end
   if valid_phone_number?(phone)
     true
